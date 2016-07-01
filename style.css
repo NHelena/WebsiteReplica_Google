@@ -1,3 +1,32 @@
-html {
+body {
   font: 16px arial, sans-serif;
 }
+
+.searchBlock {
+  /*position: relative;*/
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header, footer {
+  margin-left: auto;
+}
+
+.icons {
+  display: block;
+  min-height: 20px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+/*.icons .phone {
+  background-image: url();
+}*/
