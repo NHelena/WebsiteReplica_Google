@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <!-- Link the main stylesheet to the index.html page -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Setting of the favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="fav-icon.png">
     <!-- Setting of the page title for web-referencing -->
     <title>Google</title>
   </head>
@@ -14,35 +16,44 @@
   <body>
     <!-- Beginning of the body header -->
     <header>
-
+      <nav>
+        <ul class="header-navlist">
+          <li><a href="http://mail.google.com/mail/">Gmail</a></li>
+          <li><a href="http://www.google.fr/imghp">Images</a></li>
+          <li><img src="apps-icon.png" alt="Google apps grid logo"><a href="http://www.google.fr/intl/en/about/products/"></a></li>
+        </ul>
+      </nav>
     </header>
     <!-- End of the body header -->
     <!-- Beginning of the search block -->
     <section class="search-block">
-      <img class="logo" src="TransparentLogo.png" alt="Google logo" />
+      <img src="transparent-logo.png" alt="Google logo" />
       <!-- Beginning of the search box form -->
       <form action="/search" method="get">
         <input type="search" name="Search">
+        <br />
         <input type="submit" value="Google Search">
-        <input type="submit" value="I'm feeling lucky">
+        <input type="submit" value="I'm Feeling Lucky">
       </form>
       <!-- End of the search box form -->
     </section>
     <!-- End of the search block -->
     <!-- Beginning of the body footer -->
     <footer>
-      <div class="nav-footer-left">
-        <ul class="footer-nav">
-          <li><a href="http://www.google.fr/intl/en/ads/?fg=1">Advertising</a></li>
-          <li><a href="http://www.google.fr/services/?fg=1">Business</a></li>
-          <li><a href="http://www.google.fr/intl/en/about.html?fg=1">About</a></li>
+      <nav class="footer-nav-left">
+        <ul class="footer-navlist">
+          <li><a href="http://www.google.fr/intl/en/ads/">Advertising</a></li>
+          <li><a href="http://www.google.fr/services/">Business</a></li>
+          <li><a href="http://www.google.fr/intl/en/about.html">About</a></li>
         </ul>
-      </div>
-      <div class="nav-footer-right">
-        <li><a href="http://www.google.fr/intl/en/policies/privacy/?fg=1"></a>Privacy</li>
-        <li><a href="http://www.google.fr/intl/en/policies/terms/?fg=1"></a>Terms</li>
-        <li><a href="http://www.google.fr/preferences?hl=en"></a>Settings</li>
-      </div>
+      </nav>
+      <nav class="footer-nav-right">
+        <ul class="footer-navlist">
+          <li><a href="http://www.google.fr/intl/en/policies/privacy/">Privacy</a></li>
+          <li><a href="http://www.google.fr/intl/en/policies/terms/">Terms</a></li>
+          <li><a href="http://www.google.fr/preferences?hl=en">Settings</a></li>
+        </ul>
+      </nav>
     </footer>
     <!-- End of the body footer -->
   </body>
