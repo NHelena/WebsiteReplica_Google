@@ -1,13 +1,33 @@
+/* Import the responsive stylesheet to the main stylesheet */
+@import "responsive.css";
+
+/** {
+  margin: 0;
+  padding: 0;
+}*/
+
 body {
-  font: 16px arial, sans-serif;
+  font: 16px Arial, sans-serif;
+  background: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  resize: both;
+  overflow: auto;
 }
 
-.searchBlock {
-  /*position: relative;*/
+.search-block {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  resize: both;
+  overflow: visible;
+  margin: auto;
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
+  display: block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -17,16 +37,82 @@ header, footer {
   margin-left: auto;
 }
 
-.icons {
-  display: block;
-  min-height: 20px;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
+.footer-navlist, .header-navlist {
+  list-style: none;
 }
 
-/*.icons .phone {
-  background-image: url();
-}*/
+.header-navlist {
+  top: 0;
+  right: 0;
+}
+
+.header-navlist li {
+  display: inline;
+}
+
+.header-navlist a {
+  color: #404040;
+  text-decoration: none;
+}
+
+.header-navlist a:hover, .footer-navlist a:hover {
+  text-decoration: underline;
+}
+
+.footer-navlist {
+  display: inline-flex;
+}
+
+.footer-navlist a {
+  color: #696969;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footer-nav-left {
+  float: left;
+}
+
+.footer-nav-right {
+  float: right;
+}
+
+input[type=search], input[type=search]:hover, input[type=search]:focus,
+input[type=submit], input[type=submit]:hover {
+  border: 1px solid;
+  font: 13px Arial, sans-serif;
+}
+
+input[type=search] {
+  border-color: #D9D9D9;
+  padding: 5 9 0 9px;
+  height: 33px;
+  width: 100%;
+}
+
+input[type=search]:hover {
+  border-color: #A0A0A0;
+}
+
+input[type=search]:focus {
+  border-color: #4285F4;
+}
+
+input[type=submit], input[type=submit]:hover {
+  font-weight: bold;
+}
+
+input[type=submit] {
+  background: #F6F6F6;
+  border-color: #F8F8F8;
+  margin: 11px 4px 11px 4px;
+  color: #757575;
+  width: 125px;
+  height: 40px;
+}
+
+input[type=submit]:hover {
+  border-color: #C6C6C6;
+  color: #222222;
+}
