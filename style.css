@@ -1,13 +1,15 @@
 /* Import the responsive stylesheet to the main stylesheet */
 @import "responsive.css";
 
-/** {
-  margin: 0;
-  padding: 0;
-}*/
+
+/*Global selector */
+* {
+  font-family: Arial, sans-serif;
+  /*margin: 0;
+  padding: 0;*/
+}
 
 body {
-  font: 16px Arial, sans-serif;
   background: #ffffff;
   position: relative;
   margin: 0 auto;
@@ -15,9 +17,13 @@ body {
   overflow: auto;
 }
 
+footer {
+  background-color: #F2F2F2;
+}
+
 .search-block {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   resize: both;
@@ -33,9 +39,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
-header, footer {
+/*header, footer {
   margin-left: auto;
-}
+}*/
 
 .footer-navlist, .header-navlist {
   list-style: none;
@@ -70,12 +76,21 @@ header, footer {
   padding-right: 12px;
 }
 
-.footer-nav-left {
+.left-footer {
   float: left;
 }
 
-.footer-nav-right {
+.header-navlist, .right-footer {
   float: right;
+}
+
+/* Clearfix the floating elements */
+.clean-float {
+  clear: both;
+}
+
+.left-footer, .right-footer {
+  background-color: #F2F2F2;
 }
 
 input[type=search], input[type=search]:hover, input[type=search]:focus,
