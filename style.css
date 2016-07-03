@@ -1,6 +1,7 @@
 /* Import the responsive stylesheet to the main stylesheet */
 @import "responsive.css";
 
+
 /* ==========================================================================
    Main page
    ========================================================================== */
@@ -55,6 +56,9 @@ footer {
    Header & footer content
    ========================================================================== */
 
+/* =================================
+   Header icons */
+
 .icon {
   opacity: .50;
 }
@@ -63,7 +67,9 @@ footer {
   opacity: 1;
 }
 
-.footer-navlist, .header-navlist {
+/* =================================
+   Header & footer navigation list */
+.header-navlist, .footer-navlist {
   list-style: none;
 }
 
