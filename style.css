@@ -1,13 +1,21 @@
 /* Import the responsive stylesheet to the main stylesheet */
 @import "responsive.css";
 
+/* ==========================================================================
+   Main page
+   ========================================================================== */
 
-/*Global selector */
+/* Global selector */
 * {
-  font-family: Arial, sans-serif;
+  font: 13px Arial, sans-serif;
   /*margin: 0;
   padding: 0;*/
 }
+
+
+/* ==========================================================================
+   Body content
+   ========================================================================== */
 
 body {
   background: #ffffff;
@@ -22,8 +30,6 @@ footer {
   position: absolute;
   bottom:0;
   left:0;
-  font-size: 13px;
-
 }
 
 .search-block {
@@ -44,9 +50,18 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-/*header, footer {
-  margin-left: auto;
-}*/
+
+/* ==========================================================================
+   Header & footer content
+   ========================================================================== */
+
+.icon {
+  opacity: .50;
+}
+
+.icon:hover {
+  opacity: 1;
+}
 
 .footer-navlist, .header-navlist {
   list-style: none;
@@ -83,12 +98,12 @@ footer {
   padding-right: 16px;
 }
 
-.left-footer {
-  float: left;
-}
-
 .header-navlist, .right-footer {
   float: right;
+}
+
+.left-footer {
+  float: left;
 }
 
 /* Clearfix the floating elements */
@@ -99,6 +114,11 @@ footer {
 .left-footer, .right-footer {
   background-color: #F2F2F2;
 }
+
+
+/* ==========================================================================
+   Form buttons
+   ========================================================================== */
 
 input[type=search], input[type=search]:hover, input[type=search]:focus,
 input[type=submit], input[type=submit]:hover {
