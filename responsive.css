@@ -4,7 +4,9 @@
 
 /* Old iPhone, small Android - 320x480 */
 @media (min-width: 320px) and (max-width: 480px) {
-
+  .search-block img {
+    padding-top: 10%;
+  }
 }
 
 /* WVGA - Low-end Windows Phone - 480x800 */
@@ -24,7 +26,9 @@
 
 /* XGA - iPad - 1024x768 */
 @media (min-width: 1025px) and (max-width: 1280px) {
-
+  .search-block img {
+    padding-top: 45%;
+  }
 }
 
 /* WXGA - Netbook - 1280x800 */
