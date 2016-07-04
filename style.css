@@ -9,8 +9,6 @@
 /* Global selector */
 * {
   font: 13px Arial, sans-serif;
-  /*margin: 0;
-  padding: 0;*/
 }
 
 
@@ -19,18 +17,10 @@
    ========================================================================== */
 
 body {
-  background: #ffffff;
+  background: #FFFFFF;
   margin: 0 auto;
   resize: both;
   overflow: auto;
-}
-
-footer {
-  background-color: #F2F2F2;
-  width:100%;
-  position: absolute;
-  bottom:0;
-  left:0;
 }
 
 .search-block {
@@ -51,80 +41,8 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-
-/* ==========================================================================
-   Header & footer content
-   ========================================================================== */
-
 /* =================================
-   Header icons */
-
-.icon {
-  opacity: .50;
-}
-
-.icon:hover {
-  opacity: 1;
-}
-
-/* =================================
-   Header & footer navigation list */
-.header-navlist, .footer-navlist {
-  list-style: none;
-}
-
-.header-navlist {
-  top: 0;
-  right: 0;
-}
-
-.header-navlist li {
-  display: inline;
-}
-
-.header-navlist a {
-  color: #404040;
-  text-decoration: none;
-}
-
-.header-navlist a:hover, .footer-navlist a:hover {
-  text-decoration: underline;
-}
-
-.footer-navlist {
-  display: inline-flex;
-  margin-left: -22px;
-  margin-right: 16px;
-}
-
-.footer-navlist a {
-  color: #696969;
-  text-decoration: none;
-  padding-left: 12px;
-  padding-right: 16px;
-}
-
-.header-navlist, .right-footer {
-  float: right;
-}
-
-.left-footer {
-  float: left;
-}
-
-/* Clearfix the floating elements */
-.clean-float {
-  clear: both;
-}
-
-.left-footer, .right-footer {
-  background-color: #F2F2F2;
-}
-
-
-/* ==========================================================================
-   Form buttons
-   ========================================================================== */
+   Form buttons */
 
 input[type=search], input[type=search]:hover, input[type=search]:focus,
 input[type=submit], input[type=submit]:hover {
@@ -163,4 +81,98 @@ input[type=submit] {
 input[type=submit]:hover {
   border-color: #C6C6C6;
   color: #222222;
+}
+
+
+/* ==========================================================================
+   Header & footer content
+   ========================================================================== */
+
+/* =================================
+   Header icons */
+
+/* Set the default opacity of the header icons to half */
+.icon {
+  opacity: .50;
+}
+
+/* Set the opacity of the header icons to 100% when the mouse hovers them */
+.icon:hover {
+  opacity: 1;
+}
+
+/* =================================
+   Header & footer navigation list */
+
+/* Set the footer background color & fix it to the bottom of the page */
+footer {
+  background-color: #F2F2F2;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Remove the list bullet in the header & the footer */
+.header-navlist, .footer-navlist {
+  list-style: none;
+}
+
+/* Fix the header to the top & to the right */
+.header-navlist {
+  margin-right: 20px;
+}
+
+/* Vertically center the header icons */
+.header-navlist .icon {
+  vertical-align: middle;
+}
+
+/* Space out the header elements & vertically center the text */
+.header-navlist li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Set the font color of the header links & prevent them from being underlined */
+.header-navlist a {
+  color: #404040;
+  text-decoration: none;
+}
+
+/* Force the links to be underlined when the mouse hovers them */
+.header-navlist a:hover, .footer-navlist a:hover {
+  text-decoration: underline;
+}
+
+/* Force the footer links to be shown vertically & space them out */
+.footer-navlist {
+  display: inline-flex;
+  margin-left: -22px;
+  margin-right: 16px;
+}
+
+/* Set the font color of the footer links, prevent them from being underlined & space them out */
+.footer-navlist a {
+  color: #696969;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 16px;
+}
+
+/* Fix the header & a part of the footer to the right */
+.header-navlist, .right-footer {
+  float: right;
+}
+
+/* Fix a part of the footer to the left */
+.left-footer {
+  float: left;
+}
+
+/* Clearfix the floating elements */
+.clean-float {
+  clear: both;
 }
